@@ -19,3 +19,5 @@ plt.figure(2)
 plot2 = plt.bar(cipher_trigrams, cipher_trigram_frequenices)
 
 plt.show()
+
+# note: this is a faliure and should not be touched by any human on risk of explosion
