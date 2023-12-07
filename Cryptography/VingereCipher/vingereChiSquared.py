@@ -21,22 +21,26 @@ differences = getEstimatedKeywordLength(text, 10)
 
 print(differences)
 
-# set to earliest outlier of differences, and iterate throught the focuesed coset
-keywordLength = 4
-focused = 3
+def decipherWithKeywordLength():
+    # set to earliest outlier of differences, and iterate throught the focuesed coset
+    keywordLength = 4
+    focused = 3
 
-# split text into cosets by estimated keyword length as decimals
-cosets = cryptotools.splitCosets(keywordLength, text)
-focusedCoset = cosets[focused]
+    # split text into cosets by estimated keyword length as decimals
+    cosets = cryptotools.splitCosets(keywordLength, text)
+    focusedCoset = cosets[focused]
 
-frequencies = cryptotools.frequency(focusedCoset)
-percentageFrequencies = [(freq / textLength) for freq in frequencies]
+    frequencies = cryptotools.frequency(focusedCoset)
+    percentageFrequencies = [(freq / textLength) for freq in frequencies]
 
-# plot them in relation to equivilent english letter frequencies
-plt.figure(1)
-plot = plt.bar(alphabet, percentageFrequencies)
+    # plot them in relation to equivilent english letter frequencies
+    plt.figure(1)
+    plot = plt.bar(alphabet, percentageFrequencies)
 
-plt.figure(2)
-plot2 = plt.bar(alphabet, cryptotools.ENG_LETTER_FREQ)
+    plt.figure(2)
+    plot2 = plt.bar(alphabet, cryptotools.ENG_LETTER_FREQ)
 
-plt.show()
+    plt.show()
+
+if __name__ == "__name__":
+    decipherWithKeywordLength()

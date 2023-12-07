@@ -1,5 +1,5 @@
 import sys
-sys.path.append("C:\\Users\\justa\\Documents\\Coding\\CodingFolder\\Cryptography")
+sys.path.append("C:\\Users\\justa\\Documents\\Coding\\Public\\CodingFolder\\Cryptography")
 
 import cryptotools as ct
 import matplotlib.pyplot as plt
@@ -11,7 +11,7 @@ cipher_trigrams, cipher_trigram_frequenices = ct.trigrams(text)
 
 plt.figure(1)
 plot1 = plt.bar(ct.TRIGRAM_ORDER, ct.TRIGRAM_FREQUENCIES)
-
+ 
 print(cipher_trigrams)
 print(cipher_trigram_frequenices)
 

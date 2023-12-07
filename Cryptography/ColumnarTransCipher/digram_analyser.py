@@ -1,5 +1,5 @@
 import sys
-sys.path.append("C:\\Users\\justa\\Documents\\Coding\\CodingFolder\\Cryptography")
+sys.path.append("C:\\Users\\justa\\Documents\\Coding\\Public\\CodingFolder\\Cryptography")
 
 import cryptotools as ct
 from digram_scores import *
@@ -25,7 +25,7 @@ for i in cosets:
         sum /= coset_length-1
         output.append(f"{i[0]} {j[0]} {sum}\n")
 
-with open("C:\\Users\\justa\\Downloads\\py_output.txt","w") as file:
+with open("Cryptography\\ColumnarTransCipher\\output.txt","w") as file:
     file.writelines(output)
 
 

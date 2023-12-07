@@ -1,5 +1,5 @@
 import sys
-sys.path.append("C:\\Users\\justa\\Documents\\Coding\\CodingFolder\\Cryptography")
+sys.path.append("C:\\Users\\justa\\Documents\\Coding\\Public\\CodingFolder\\Cryptography")
 
 import cryptotools
 
